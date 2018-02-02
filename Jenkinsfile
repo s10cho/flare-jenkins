@@ -7,5 +7,11 @@ pipeline {
 flare build'''
       }
     }
+    stage('Deploy') {
+      steps {
+        sh '''fhome
+flare build'''
+      }
+    }
   }
 }
