@@ -4,13 +4,13 @@ pipeline {
     stage('Build') {
       steps {
         sh '''cd /home/enomix/flare/flare-py-1.1
-python3 flare.py build docker'''
+python3 flare.py build'''
       }
     }
     stage('Deploy') {
       steps {
         sh '''cd /home/enomix/flare/flare-py-1.1
-sleep 5'''
+python3 flare.py deploy'''
       }
     }
   }
