@@ -3,14 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd /home/enomix/flare/flare-py-1.1
-python3 flare.py build'''
+        sh '''/home/enomix/flare/flare-py-1.1/flare_bin/git.sh
+/home/enomix/flare/flare-py-1.1/flare_bin/run.sh build'''
       }
     }
     stage('Deploy') {
       steps {
-        sh '''cd /home/enomix/flare/flare-py-1.1
-python3 flare.py deploy'''
+        sh '/home/enomix/flare/flare-py-1.1/flare_bin/run.sh deploy'
       }
     }
   }
