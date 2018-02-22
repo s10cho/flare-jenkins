@@ -14,7 +14,9 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh '/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test ready'
+        sh '''/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test ready
+
+/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test talk'''
       }
     }
   }
