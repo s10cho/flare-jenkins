@@ -20,5 +20,10 @@ pipeline {
 /home/enomix/flare/flare-py-1.1/flare_bin/run.sh test talk'''
       }
     }
+    stage('Report') {
+      steps {
+        sh 'sleep 1'
+      }
+    }
   }
 }
