@@ -14,13 +14,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh '''/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test ready
-
-/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test talk
-
-/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test scenario
-
-/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test chatbot'''
+        sh '/home/enomix/flare/flare-py-1.1/flare_bin/run.sh test'
       }
     }
     stage('Report') {
